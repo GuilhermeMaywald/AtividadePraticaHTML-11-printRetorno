@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <h1>Aliste-se</h1>
+
+    <form method="POST" action="https://bemach1.com.br/html-aula-forms/cadastroRecruta.php" target="_blank"
+        enctype="multipart/form-data">
+
+        <div>
+            <label for="email">Seu e-mail
+                <br>
+                <input type="email" placeholder="e-mail" id="email" style="width: 250px" name="email">
+                <br>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="senha">Senha
+                <br>
+                <input type="password" placeholder="Crie sua senha" style="width: 250px" id="senha" name="senha">
+                <br>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="name">Nome Completo
+                <br>
+                <input type="text" placeholder="Informe seu nome" style="width: 250px" id="name" name="nomeCompleto">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="cpf">CPF (Apenas números)
+                <br>
+                <input type="number" placeholder="00000000000" style="width: 250px" id="cpf" name="cpf">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="rg">RG (Apenas números)
+                <br>
+                <input type="number" placeholder="0000000" style="width: 250px" id="rg" name="rg">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="date">Data de nascimento
+                <br>
+                <input type="date" style="width: 250px" name="nascimento" id="date">
+            </label>
+        </div>
+        <br>
+        <fieldset style="width:230px">
+            <legend>Necessidades especiais</legend>
+
+            <input name="necessidadesEspeciais" type="radio" value="sim" id="sim">
+            <label for="sim">Sim</label>
+            <br>
+
+            <br>
+            <input name="necessidadesEspeciais" type="radio" value="nao" id="nao">
+            <label for="nao">Não</label>
+        </fieldset>
+        <br>
+        <div>
+            <label for="state">Estado de residência</label>
+            <br>
+            <select style="width: 260px" id="state" name="estado">
+                <option value="Selecione o seu estado">Selecione o seu estado</option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="PR">PR</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RR</option>
+                <option value="AP">AP</option>
+                <option value="SC">SC</option>
+                <option value="SE">SE</option>
+                <option value="SP">SP</option>
+                <option value="TO">TO</option>
+            </select>
+        </div>
+        <br>
+        <fieldset style="width:230px">
+            <legend>Especialização desejada</legend>
+
+            <input type="checkbox" value="Mecânica de Aeronaves" id="mec" name="especializacao1">
+            <label for="mec">Mecânica de Aeronaves</label>
+            <br>
+
+            <input type="checkbox" value="Montagem de aeronaves" id="mont" name="especializacao2">
+            <label for="mont">Montagem de aeronaves</label>
+            <br>
+
+            <input type="checkbox" value="Engenheiro de aeronaves" id="eng" name="especializacao3">
+            <label for="eng">Engenheiro de aeronaves</label>
+            <br>
+
+            <input type="checkbox" value="Piloto" id="pilot" name="especializacao4">
+            <label for="pilot">Piloto</label>
+            <br>
+
+            <input type="checkbox" value="Operador de tráfego aéreo" id="ope" name="especializacao5">
+            <label for="ope">Operador de tráfego aéreo</label>
+
+            <br><br>
+        </fieldset>
+        <br>
+        <div>
+            <label for="foto">Adicione sua foto
+                <input type="file" multiple name="foto">
+                <br>
+            </label>
+        </div>
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+        <br>
+    </form>
+
+</body>
+
+</html>
